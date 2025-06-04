@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Developer Portfolio">
+    <meta name="keywords" content="Portfolio, Backend, Tomás, Portafolio">
+    <meta name="author" content="Tomás Ponce">
+    <link rel="shortcut icon" href="./assets/img/avatar.png" type="image/x-icon">
+    <title>Tomás Portfolio</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+    <header>
+        <section class="section_theme">
+            <div class="info_theme">
+                <div>
+                    <h3>Theme</h3>
+                    <p id="theme">Dark</p>
+                </div>
+                <div class="paste-button">
+                    <button class="button"> <i class="fa-solid fa-arrow-down"></i></i></button>
+                    <div class="dropdown-content">
+                        <a onclick="pinkMode(Pink)" id="top" href="#">Pink</a>
+                        <a onclick="darkMode(Dark)" id="middle" href="#">Dark</a>
+                        <a onclick="lightMode(Light)" id="bottom" href="#">Light</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_profile">
+            <div class="profile">
+                <img src="./assets/img/avatar.png" alt="Profile" class="avatar">
+                <h2>Tomás Ponce</h2>
+                <div>
+                    <p class="title">Backend Developer </p>
+                </div>
+                <button class="download">Download Resume</button>
+            </div>
+        </section>
+        <section class="section_info">
+            <div class="info">
+                <div class="socials">
+                    <h4><i class="fa-solid fa-location-dot"></i> Locality:</h4>
+                    <p>Argentina</p>
+                </div>
+                <div class="socials">
+                    <h4><i class="fa-brands fa-github"></i> GitHub:</h4>
+                    <p onclick="window.open('https:/github.com/tomas0204', '_blank')"><a href="">tomas0204</a></p>
+                </div>
+                <div class="socials">
+                    <h4><i class="fa-brands fa-linkedin"></i> LinkedIn:</h4>
+                    <p onclick="window.open('https:/www.linkedin.com/in/tom%C3%A1s-ponce-b6652929a/', '_blank')"><a
+                            href="">Tomás</a></p>
+                </div>
+                <div class="socials">
+                    <h4><i class="fa-solid fa-envelope"></i> Gmail:</h4>
+                    <p onclick="window.open('mailto:tomasignacioponce17@gmail.com', '_blank')"><a
+                            href="">tomasignacioponce17</a></p>
+                </div>
+                <div class="socials">
+                    <h4><i class="fa-brands fa-whatsapp"></i> WhatsApp:</h4>
+                    <p onclick="window.open('https:/wa.me/+5493813998748', '_blank')"><a href="">+54 9 381 399-8748</a>
+                    </p>
+                </div>
+                <div class="socials">
+                    <h4><i class="fa-solid fa-fire"></i> Workana:</h4>
+                    <p
+                        onclick="window.open('https:/www.workana.com/freelancer/85b9add3b46cfca30d604c319b8d25a6', '_blank')">
+                        <a href="">Tomás P.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section_info">
+            <div class="info">
+                <h3>Tech Stack</h3>
+                <div class="stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                    <span>MySQL</span>
+                    <span>PostgreSQL</span>
+                    <span>SQLite</span>
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </section>
+        <section class="section_info">
+            <div class="info">
+                <h3>Experience</h3>
+                <div class="item">
+                    <h4><i class="fa-solid fa-arrow-right"></i> 2022 - Present</h4>
+                    <p>I have experience developing software and websites for individuals as well as small and medium
+                        size agencies.</p>
+                    <p>Have worked on existing code -making adjustments and improvements- and I have also developed new
+                        custom functionalities, according to each client's requirements.</p>
+                    <p>Using GitHub to collaborate with different users simultaneously, improving the efficiency of
+                        various areas of the code.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section_info">
+            <div class="info">
+                <h3>Certifications</h3>
+                <div class="item certifications">
+                    <h4><i class="fa-solid fa-arrow-right"></i> April 2023 - July 2023</h4>
+                    <h5>Aprende Programando (Argentina)</h5>
+                    <p>Development with Python I</p>
+                    <p><a href=""><b>Certification Here !</b></a></p>
+                </div>
+                <div class="item certifications">
+                    <h4><i class="fa-solid fa-arrow-right"></i> September 2023 - December 2023</h4>
+                    <h5>Aprende Programando (Argentina)</h5>
+                    <p>Development with Python II</p>
+                    <p><a href=""><b>Certification Here !</b></a></p>
+                </div>
+                <div class="item certifications">
+                    <h4><i class="fa-solid fa-arrow-right"></i> In Progress...</h4>
+                    <h5>Rolling Code</h5>
+                    <p>FullStack title.</p>
+                    <p><a href=""><b>WebSite</b></a></p>
+                </div>
+            </div>
+        </section>
+        <section class="section_info">
+            <div class="info">
+                <h3>Additional Information</h3>
+                <div class="item">
+                    <h4> <i class="fa-solid fa-arrow-right"></i> Improving</h4>
+                    <p>English level (currently in B1-B2)</p>
+                    <p>In React and Js</p>
+                    <p>Programming logic</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h3>My Projects</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Movies and Series API</h4>
+                    <img src="./assets/img/project1.png" alt="">
+                    <p>Use of API that allows you to search for details about movies or series.</p>
+                    <span class="bubble django">Django</span>
+                    <span class="bubble mysql">MySQL</span>
+                    <div>
+                        <i onclick="window.open('https:/vercel-beta-steel.vercel.app/', '_blank')"
+                            class="fa-solid fa-link"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>MonkeyMind</h4>
+                    <img src="./assets/img/monkey.png" alt="">
+                    <p>Educational project that simulates the learning of a monkey with the help of the user.</p>
+                    <span class="bubble django">Django</span>
+                    <span class="bubble mysql">MySQL</span>
+                    <div>
+                        <i onclick="window.open('https:/monkey-project.vercel.app/', '_blank')"
+                            class="fa-solid fa-link"></i>
+                        <i onclick="window.open('https:/github.com/tomas0204/MonkeyProject', '_blank')"
+                            class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>Chat Online</h4>
+                    <img src="./assets/img/project2.png" alt="">
+                    <p>In Progress</p>
+                    <p>In Progress</p>
+                    <span class="bubble django">Django</span>
+                    <span class="bubble mysql">MySQL</span>
+                    <div>
+                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>Media control with gestures</h4>
+                    <img src="./assets/img/hands.png" alt="">
+                    <p>This project uses a webcam to detect hand gestures.</p>
+                    <br>
+                    <span class="bubble python">Python</span>
+                    <div>
+                        <i onclick="window.open('https:/github.com/tomas0204/Hand-Gesture-Media-Control', '_blank')"
+                            class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="projects">
+            <h3>Freelance Jobs (featured)</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Excel automation with Python</h4>
+                    <img src="./assets/img/excel.png" alt="">
+                    <p>Program that is responsible for summarizing a lot of data in a spreadsheet for an agency.</p>
+                    <br>
+                    <h5>Feedback the client:</h5>
+                    <h6>"I loved how it turned out". <i class="fa-solid fa-champagne-glasses"></i></h6>
+                    <span class="bubble python">Python</span>
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>Automation of a game</h4>
+                    <img src="./assets/img/game.png" alt="">
+                    <p>The player moves on his own, solves captchas and recognizes various functions.</p>
+                    <br>
+                    <h5>Feedback the client:</h5>
+                    <h6>"Very good programmer, fixed bugs, implemented new features from scratch, 100% recommended". <i class="fa-solid fa-champagne-glasses"></i></h6>
+                    <span class="bubble python">Python</span>
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/6637e0286d.js" crossorigin="anonymous"></script>
+    <script src="./styles/index.js"></script>
+</body>
+
+</html>
