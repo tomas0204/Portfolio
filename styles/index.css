@@ -197,6 +197,8 @@ i{
 
 
 .download {
+    text-decoration: none;
+    font-size: 13px;
     background-color: var(--profile);
     border: none;
     padding: 8px 16px;
@@ -399,6 +401,23 @@ i{
     color: #000;
 }
 
+.bubble.debian{
+    background-color: #d70753a8;
+    color: black;
+}
+
+.final_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.final{
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+}
 
 @media all and (max-width: 576px){
     body{
@@ -407,14 +426,17 @@ i{
         margin: 0;
     }
 
+    .dropdown-content{
+         right: 10px;
+    }
+
    .projects{
         padding: 10px;
         margin-top: 20px;
-        box-shadow: none;
    }
 
-   .card{
-        box-shadow: none;
+   .section_profile, .section_theme, .section_info, .card, .projects{
+        box-shadow: 5px 5px 1px var(--box-shadow);
    }
 }
 
@@ -423,6 +445,10 @@ i{
         grid-template-columns: none;
         padding: 20px;
         margin: 0;
+    }
+
+    .dropdown-content{
+         right: 10px;
     }
 
     .grid {
@@ -436,6 +462,10 @@ i{
 @media all and (min-width: 769px) and (max-width:992px){
     body{
         grid-template-columns: none;
+    }
+
+    .dropdown-content{
+         right: 10px;
     }
 
     .grid{
