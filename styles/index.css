@@ -406,6 +406,17 @@ i{
     color: black;
 }
 
+.bubble.wordpress{
+    background-color: #27789ece;
+    color: black;
+}
+
+.bubble.hostinger{
+    background-color: #6c43e6af;
+    color: black;
+}
+
+
 .final_card{
     display: flex;
     justify-content: center;
