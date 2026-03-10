@@ -387,17 +387,27 @@ i{
 }
 
 .bubble.django {
-    background-color: #103427b9;
+    background-color: #103427cc;
     color: black;
 }
 
 .bubble.mysql {
-    background-color: #1a67978e;
+    background-color: #1a6797b2;
     color: black;
 }
 
-.bubble.python {
-    background-color: #3d73a3c5;
+.bubble.react {
+    background-color: #61dafbb6;
+    color: #000;
+}
+
+.bubble.node {
+    background-color: #68a063b0; /* verde Node */
+    color: #000;
+}
+
+.bubble.mongodb {
+    background-color: #4db33db0; /* verde MongoDB */
     color: #000;
 }
 
