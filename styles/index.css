@@ -391,6 +391,11 @@ i{
     color: black;
 }
 
+.bubble.python {
+    background-color: #306998cc;
+    color: black;
+}
+
 .bubble.mysql {
     background-color: #1a6797b2;
     color: black;
