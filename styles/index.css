@@ -5,14 +5,14 @@
 
 
 :root {
-    --background-projects: #b49992;
-    --background: #e5dbce;
-    --card-background: #cbada5;
-    --text: #583F39;
-    --profile: #684047;
-    --profile-secondary: #4a23248e;
-    --box-shadow: #a3867f;
-    --box-shadow-img : #a3867f;
+    --background-projects: #181D23;
+    --background: #15191E;
+    --card-background: #1D232A;
+    --text: #7D848F;
+    --profile: #504ece;
+    --profile-secondary: #504ece6b;
+    --box-shadow: #13171C;
+    --box-shadow-img : #504ece1a;
 }
 
 body {
