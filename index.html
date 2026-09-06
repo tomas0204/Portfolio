@@ -164,7 +164,7 @@
     <main>
         <section class="projects">
             <h3>My Projects</h3>
-            <div class="grid">
+            <div class="grid" id="projectsGrid">
 
                 <div class="card">
                     <h4>Clínica</h4>
@@ -186,10 +186,28 @@
                     </div>
                 </div>
                 <div class="card">
+                    <h4>JARVIS</h4>
+                    <img src="./assets/img/jarvis.png" alt="JARVIS">
+
+                    <p>Personal AI assistant inspired by JARVIS.</p>
+                    <p>In Development</p>
+
+                    <span class="bubble python">Python</span>
+                    <span class="bubble react">React</span>
+                    <span class="bubble typescript">TypeScript</span>
+                    <span class="bubble fastapi">FastAPI</span>
+                    <span class="bubble tauri">Tauri</span>
+
+                    <div>
+                        <i onclick="window.open('https://github.com/tomas0204/Jarvis', '_blank')"
+                            class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+
+              <div class="card">
                     <h4>Chat Online</h4>
                     <img src="./assets/img/project2.png" alt="">
-                    <p>In Progress</p>
-                    <p>In Progress</p>
+                    <p>In Development</p>
                     <span class="bubble django">Django</span>
                     <span class="bubble mysql">MySQL</span>
                     <div>
@@ -233,6 +251,11 @@
                     </div>
                 </div> -->
 
+            </div>
+            <div class="projects-pagination"> 
+                <button id="projectsPrev">‹</button> 
+                <span id="projectsPage">1 / 1</span> 
+                <button id="projectsNext">›</button> 
             </div>
         </section>
         <section class="projects">

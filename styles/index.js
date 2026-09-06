@@ -1,3 +1,14 @@
+const projectsGrid = document.getElementById('projectsGrid');
+const projectCards = projectsGrid.querySelectorAll('.card');
+const projectsPerPage = 4;
+let projectsCurrentPage = 1;
+const projectsTotalPages = Math.ceil(
+    projectCards.length / projectsPerPage
+);
+const projectsPrev = document.getElementById('projectsPrev');
+const projectsNext = document.getElementById('projectsNext');
+const projectsPage = document.getElementById('projectsPage');
+
 let Dark = "Dark"
 let Light = "Light"
 let Pink = "Pink"
@@ -44,3 +55,60 @@ function darkMode(ModoActual){
     document.getElementById("theme").textContent = ModoActual;
     console.log(ModoActual)
 }
+
+function showProjectsPage(page) {
+
+    const start = (page - 1) * projectsPerPage;
+    const end = start + projectsPerPage;
+
+    projectCards.forEach((card, index) => {
+
+        card.style.display =
+            index >= start && index < end ? '' : 'none';
+
+    });
+
+    projectsPage.textContent = `${page} / ${projectsTotalPages}`;
+    projectsPrev.disabled = page === 1;
+    projectsNext.disabled = page === projectsTotalPages;
+}
+
+
+function scrollToProjects() {
+
+    projectsGrid.closest('.projects').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+
+}
+
+
+projectsPrev.addEventListener('click', () => {
+
+    if (projectsCurrentPage > 1) {
+
+        projectsCurrentPage--;
+        showProjectsPage(projectsCurrentPage);
+        scrollToProjects();
+
+    }
+
+});
+
+
+projectsNext.addEventListener('click', () => {
+
+    if (projectsCurrentPage < projectsTotalPages) {
+        
+        projectsCurrentPage++;
+        showProjectsPage(projectsCurrentPage);
+        scrollToProjects();
+
+    }
+
+});
+
+
+showProjectsPage(projectsCurrentPage);
+
